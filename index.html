@@ -50,6 +50,7 @@
             display: flex;
             gap: 12px;
             flex-wrap: wrap;
+            align-items: center;
         }
         .badge {
             padding: 8px 14px;
@@ -58,11 +59,15 @@
             font-weight: 600;
             text-decoration: none;
             color: white;
+            display: inline-flex;
+            align-items: center;
         }
         .badge-resume { background: #d14836; }
         .badge-linkedin { background: #0077b5; }
         .badge-github { background: #333; }
         .badge-zenodo { background: #00749b; }
+        .badge-orcid { background: #a6ce39; color: #000; }
+        .badge-orcid:hover { background: #b7df4a; }
 
         h3 {
             color: var(--heading);
@@ -108,6 +113,7 @@
             </div>
 
             <div class="links">
+                <a href="https://orcid.org/0009-0004-1981-0916" class="badge badge-orcid" target="_blank">🔬 ORCID</a>
                 <a href="https://terry2023.github.io/Kosmos/Terry_Schermerhorn_Resume.pdf" class="badge badge-resume" target="_blank">📄 Resume (PDF)</a>
                 <a href="https://linkedin.com/in/terryschermerhorn" class="badge badge-linkedin" target="_blank">🔗 LinkedIn</a>
                 <a href="https://github.com/Terry2023" class="badge badge-github" target="_blank">🐙 GitHub</a>
@@ -132,6 +138,11 @@
                         <td>13-protocol stack for sovereignty-preserving interoperability and distributed cognition.</td>
                     </tr>
                     <tr>
+                        <td><a class="repo-link" href="https://github.com/Terry2023/orpheus" target="_blank">Orpheus</a></td>
+                        <td>Narrative Physics Engine</td>
+                        <td>Deterministic story generation via biomimetic character state vectors and closed-form trajectory simulation.</td>
+                    </tr>
+                    <tr>
                         <td><a class="repo-link" href="https://github.com/Terry2023/methuselah" target="_blank">Methuselah</a></td>
                         <td>Sovereign Gatekeeper</td>
                         <td>Local constraint engine for controlled, auditable AI behavior and prompt governance.</td>
@@ -152,9 +163,6 @@
             <h3>Research & Publications</h3>
             <ul>
                 <li><strong>Federated AI Infrastructure (FI-13)</strong> — Layered protocols for sovereign machine intelligence (Zenodo, 2026)</li>
-                <li>Theta-Psi Framework — Systems philosophy and theoretical architectures</li>
+                <li><strong>Theta-Psi Framework</strong> — Geometric resolution of the Hubble Tension and dark matter alternative — <a href="https://zenodo.org/search?q=Schermerhorn" style="color:#58a6ff" target="_blank">six papers on Zenodo</a></li>
             </ul>
         </main>
-    </div>
-</body>
-</html>
