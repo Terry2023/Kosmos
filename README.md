@@ -1,3 +1,5 @@
+<div style="background-color: #0d1117; color: #ffffff; padding: 25px; border-radius: 6px; border: 1px solid #30363d;">
+
 # 🌌 KOSMOS
 ### The Overarching Architectural Matrix for Sovereign & Federated AI Systems
 
@@ -6,6 +8,10 @@
   <a href="https://linkedin.com/in/terryschermerhorn"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="https://zenodo.org/records/20262505"><img src="https://img.shields.io/badge/Zenodo-Open%20Science-00749b?style=for-the-badge&logo=zenodo&logoColor=white" alt="Zenodo"/></a>
 </p>
+
+</div>
+
+<br>
 
 ---
 
