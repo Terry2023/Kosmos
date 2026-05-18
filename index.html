@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terry Schermerhorn | AI Systems Architect</title>
+    <style>
+        :root {
+            --bg: #0d1117;          /* GitHub's official eye-comfort dark background */
+            --surface: #161b22;     /* Slightly lighter surface for cards/containers */
+            --text: #c9d1d9;        /* Soft off-white to eliminate high-contrast glare */
+            --text-heading: #ffffff;/* Clean white for immediate readability */
+            --accent: #58a6ff;      /* Terminal blue for high-signal highlights */
+            --border: #30363d;      /* Low-impact separator line color */
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+        }
+
+        h1 { 
+            margin: 0 0 10px 0; 
+            font-size: 2.2rem; 
+            color: var(--text-heading); 
+            letter-spacing: -0.5px;
+        }
+
+        h2 { 
+            font-size: 1.05rem; 
+            color: var(--accent); 
+            margin: 0 0 20px 0; 
+            font-weight: 500; 
+            letter-spacing: 0.5px; 
+        }
+
+        h3 { 
+            border-bottom: 1px solid var(--border); 
+            padding-bottom: 8px; 
+            color: var(--text-heading); 
+            margin-top: 40px; 
+            font-size: 1.3rem;
+        }
+
+        .meta-links { 
+            margin-top: 20px; 
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* High-signal badge links */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .badge-resume { background-color: #d14836; }
+        .badge-linkedin { background-color: #0077b5; }
+        .badge-zenodo { background-color: #00749b; }
+
+        .summary { 
+            font-size: 1.05rem; 
+            color: #e6edf3; 
+            text-align: justify;
+        }
+
+        /* Table custom-engineered for dark eye-safety */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: var(--surface);
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        th {
+            background-color: #21262d;
+            color: var(--text-heading);
+            text-align: left;
+            padding: 12px 16px;
+            font-size: 0.9rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.95rem;
+            vertical-align: top;
+        }
+
+        tr:last-child td { border-bottom: none; }
+
+        a.repo-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a.repo-link:hover { text-decoration: underline; }
+
+        ul { margin: 8px 0 0 0; padding-left: 20px; }
+        li { margin-bottom: 6px; }
+        code {
+            background-color: #21262d;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.85rem;
+            color: #ff7b72;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌌 KOSMOS</h1>
+            <h2>The Overarching Architectural Matrix for Sovereign & Federated AI Systems</h2>
+            
+            <div class="summary">
+                Systems-oriented technologist, independent researcher, and U.S. Air Force veteran with over 30 years of operational depth across military weapons systems, electronics, database management, and technical leadership. Currently specializing in sovereign, federated, and verifiable artificial intelligence infrastructure—designing systems that prioritize local control, auditability, and resilience without commercial cloud dependency.
+            </div>
+
+            <div class="meta-links">
+                <a href="https://terry2023.github.io/Kosmos/Terry_Schermerhorn_Resume.pdf" class="badge badge-resume" target="_blank">📄 Download Master Resume (PDF)</a>
+                <a href="https://linkedin.com/in/terryschermerhorn" class="badge badge-badge-linkedin" style="background-color: #0077b5;" target="_blank">🔗 LinkedIn Profile</a>
+                <a href="https://zenodo.org/records/20262505" class="badge badge-zenodo" target="_blank">🔬 Zenodo Open Science Record</a>
+            </div>
+        </header>
+
+        <main>
+            <h3>🔬 Core Active Systems Architecture</h3>
+            <p>Verification and deployment matrix for active protocols running locally on sovereign hardware (<code>AMD Ryzen 9 7950X / RTX 4070 / 64GB DDR5</code>).</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Repository</th>
+                        <th style="width: 25%;">Protocol / Layer</th>
+                        <th style="width: 50%;">Core Functional Target</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a class="repo-link" href="https://github.com/Terry2023/fi13-protocol" target="_blank">fi13-protocol</a></td>
+                        <td><code>FI-13 Stack Layers 1–13</code></td>
+                        <td>13-protocol interoperability stack enabling secure, weight-isolated context sharing via a permissioned Federated Memory Fabric.</td>
+                    </tr>
+                    <tr>
+                        <td><a class="repo-link" href="https://github.com/Terry2023/methuselah" target="_blank">methuselah</a></td>
+                        <td><code>Gatekeeper Core</code></td>
+                        <td>Locally-sovereign AI dashboard featuring autonomous input scrubbing, intent classification, and multi-model microservice routing gates.</td>
+                    </tr>
+                    <tr>
+                        <td><a class="repo-link" href="https://github.com/Terry2023/hive-engine" target="_blank">hive-engine</a></td>
+                        <td><code>Specialist Debate (P10/P11)</code></td>
+                        <td>Decentralized legislative consensus engine executing multi-model <code>ASSERT → COUNTER → VALIDATE</code> reasoning loops.</td>
+                    </tr>
+                    <tr>
+                        <td><a class="repo-link" href="https://github.com/Terry2023/shackleton-protocol" target="_blank">shackleton-protocol</a></td>
+                        <td><code>Multi-Agent Coordination</code></td>
+                        <td>Constitution-governed autonomous think tank featuring five parallel domain specialist agents producing ranked feasibility-scored solutions.</td>
+                    </tr>
+                    <tr>
+                        <td><a class="repo-link" href="https://github.com/Terry2023/mix-of-experts" target="_blank">mix-of-experts</a></td>
+                        <td><code>Evaluation Pipeline</code></td>
+                        <td>Autonomous multi-pass scientific paper review and verification engine.</td>
+                    </tr>
+                    <tr>
+                        <td><a class="repo-link" href="https://github.com/Terry2023/theta-psi-framework" target="_blank">theta-psi-framework</a></td>
+                        <td><code>Cosmological Modeling</code></td>
+                        <td>Asynchronous simulations utilizing the 74/26 entropy-minimization principle for physics-constrained cislunar resource tracking.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>📑 Research Record & Publications</h3>
+            <ul>
+                <li><strong>Federated AI Infrastructure: Layered Interoperability Protocols for Sovereign Machine Intelligence</strong> (Zenodo DOI: <code>10.5281/zenodo.20262505</code>)</li>
+                <li><strong>The 74/26 Principle: Entropy Minimization and Physics-Constrained Stability in Cislunar Resource Networks</strong> (Zenodo DOI: `10.5281/zenodo.15207657`)</li>
+                <li><strong>Cryogenic Infrastructure for Lunar-Scale Quantum Computing: The Theta-Psi Framework</strong> (Papers I–III)</li>
+            </ul>
+        </main>
+    </div>
+</body>
+</html>
