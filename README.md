@@ -1,46 +1,30 @@
-# Terry Schermerhorn
-**USAF Veteran (Ret. E6) | Independent Researcher | AI Systems Architect**  
-Brooksville, FL
+# 🌌 KOSMOS
+### The Overarching Architectural Matrix for Sovereign & Federated AI Systems
 
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0004--1981--0916-brightgreen?logo=orcid)](https://orcid.org/0009-0004-1981-0916)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Terry_Schermerhorn-blue?logo=linkedin)](https://www.linkedin.com/in/terryschermerhorn/)
-
----
-
-## About
-
-Independent researcher working at the intersection of federated AI infrastructure, cislunar systems architecture, and geometric cosmology. Former USAF Missile Systems Analyst with nuclear-capable platform diagnostics experience (AGM-86B, AIM-120). Top Secret clearance (ret.).
-
-Current focus: designing sovereignty-preserving interoperability protocols for heterogeneous AI systems and multi-agent coordination architectures running on local sovereign hardware.
+<p align="left">
+  <a href="https://terry2023.github.io/Kosmos/Terry_Schermerhorn_Resume.pdf" target="_blank"><img src="https://img.shields.io/badge/Download-Master%20Resume%20%28PDF%29-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download Resume"/></a>
+  <a href="https://linkedin.com/in/terryschermerhorn"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://zenodo.org/records/20262505"><img src="https://img.shields.io/badge/Zenodo-Open%20Science-00749b?style=for-the-badge&logo=zenodo&logoColor=white" alt="Zenodo"/></a>
+</p>
 
 ---
 
-## Active Projects
+## 🔬 Core Active Systems Architecture
 
-| Repository | Description |
-|---|---|
-| [fi13-protocol](https://github.com/Terry2023/fi13-protocol) | Federated AI Infrastructure — 13-protocol interoperability stack |
-| [methuselah](https://github.com/Terry2023/methuselah) | Sovereign AI dashboard with autonomous Gatekeeper LLM |
-| [hive-engine](https://github.com/Terry2023/hive-engine) | FI-13 multi-model debate engine (P10/P11 implementation) |
-| [shackleton-protocol](https://github.com/Terry2023/shackleton-protocol) | Multi-agent think tank for engineering requirements analysis |
-| [mix-of-experts](https://github.com/Terry2023/mix-of-experts) | Autonomous multi-pass paper review system |
-| [theta-psi-framework](https://github.com/Terry2023/theta-psi-framework) | Θ-Ψ geometric cosmological framework papers |
+Below is the verification and deployment matrix for protocols running locally on sovereign hardware (`AMD Ryzen 9 7950X / RTX 4070 / 64GB DDR5`).
 
----
-
-## Research Areas
-
-- **Federated AI Infrastructure** — sovereignty-preserving multi-agent coordination
-- **Cislunar Systems Architecture** — orbital manufacturing, asteroid mining economics
-- **Geometric Cosmology** — Θ-Ψ framework, dark matter alternative, Hubble tension
-- **Multi-Agent Systems** — mixture of experts, specialist debate architectures
+| Repository | Protocol / Layer | Core Functional Target |
+| :--- | :--- | :--- |
+| **[`fi13-protocol`](https://github.com/Terry2023/fi13-protocol)** | FI-13 Stack Layers 1–13 | 13-protocol interoperability stack enabling secure, weight-isolated context sharing via a permissioned Federated Memory Fabric. |
+| **[`methuselah`](https://github.com/Terry2023/methuselah)** | Gatekeeper Core | Locally-sovereign AI dashboard featuring autonomous input scrubbing, intent classification, and multi-model microservice routing gates. |
+| **[`hive-engine`](https://github.com/Terry2023/hive-engine)** | Specialist Debate (P10/P11) | Decentralized legislative consensus engine executing multi-model `ASSERT → COUNTER → VALIDATE` reasoning loops. |
+| **[`shackleton-protocol`](https://github.com/Terry2023/shackleton-protocol)** | Multi-Agent Coordination | Constitution-governed autonomous think tank featuring five parallel domain specialist agents producing ranked feasibility-scored solutions. |
+| **[`mix-of-experts`](https://github.com/Terry2023/mix-of-experts)** | Evaluation Pipeline | Autonomous multi-pass scientific paper review and verification engine. |
+| **[`theta-psi-framework`](https://github.com/Terry2023/theta-psi-framework)** | Cosmological Modeling | Asynchronous simulations utilizing the 74/26 entropy-minimization principle for physics-constrained cislunar resource tracking. |
 
 ---
 
-## Current Work
-
-**"Federated AI Infrastructure for Shared Context, Sovereign Models, and Resilient Interoperability"** — preprint in preparation for Zenodo deposit. Proposes the FI-13 protocol stack: thirteen protocols across four logical layers governing transport, semantic alignment, reasoning exchange, and governance coordination for heterogeneous sovereign AI systems.
-
----
-
-*All simulations run on local sovereign hardware — AMD Ryzen 9 7950X / RTX 4070 / 64GB — no cloud dependencies.*
+## 📑 Research Record & Publications
+* **Federated AI Infrastructure: Layered Interoperability Protocols for Sovereign Machine Intelligence** (Zenodo DOI: `10.5281/zenodo.20262505`)
+* **The 74/26 Principle: Entropy Minimization and Physics-Constrained Stability in Cislunar Resource Networks** (Zenodo DOI: `10.5281/zenodo.15207657`)
+* **Cryogenic Infrastructure for Lunar-Scale Quantum Computing: The Theta-Psi Framework** (Papers I–III)
