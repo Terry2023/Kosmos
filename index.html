@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,73 +9,82 @@
         :root {
             --bg: #0d1117;
             --surface: #161b22;
+            --surface2: #21262d;
             --text: #c9d1d9;
             --heading: #ffffff;
             --accent: #58a6ff;
+            --green: #3fb950;
             --border: #30363d;
+            --muted: #8b949e;
         }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             background-color: var(--bg);
             color: var(--text);
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             line-height: 1.65;
-            margin: 0;
-            padding: 40px 20px;
+            padding: 40px 20px 80px;
         }
-        .container {
-            max-width: 860px;
-            margin: 0 auto;
-        }
+        .container { max-width: 900px; margin: 0 auto; }
+
+        /* ── HEADER ── */
         header {
             border-bottom: 1px solid var(--border);
-            padding-bottom: 30px;
-            margin-bottom: 40px;
+            padding-bottom: 32px;
+            margin-bottom: 48px;
         }
         h1 {
-            margin: 0 0 8px 0;
-            font-size: 2.4rem;
+            font-size: 2.6rem;
             color: var(--heading);
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
         }
         .tagline {
-            font-size: 1.15rem;
+            font-size: 1.1rem;
             color: var(--accent);
-            margin: 0 0 20px 0;
+            margin-bottom: 18px;
         }
         .summary {
-            font-size: 1.08rem;
+            font-size: 1.05rem;
             color: #e6edf3;
-            max-width: 720px;
+            max-width: 740px;
+            margin-bottom: 28px;
         }
-        .links {
-            margin-top: 25px;
+        .summary strong { color: var(--heading); }
+
+        /* ── BADGE ROW ── */
+        .badges {
             display: flex;
-            gap: 12px;
+            gap: 10px;
             flex-wrap: wrap;
-            align-items: center;
         }
         .badge {
-            padding: 8px 14px;
+            padding: 8px 15px;
             border-radius: 6px;
-            font-size: 0.9rem;
+            font-size: 0.875rem;
             font-weight: 600;
             text-decoration: none;
             color: white;
-            display: inline-flex;
-            align-items: center;
+            transition: opacity 0.15s;
         }
-        .badge-resume { background: #d14836; }
+        .badge:hover { opacity: 0.85; }
+        .badge-resume   { background: #d14836; }
         .badge-linkedin { background: #0077b5; }
-        .badge-github { background: #333; }
-        .badge-zenodo { background: #00749b; }
-        .badge-orcid { background: #a6ce39; color: #000; }
-        .badge-orcid:hover { background: #b7df4a; }
+        .badge-github   { background: #333; border: 1px solid var(--border); }
+        .badge-zenodo   { background: #00749b; }
+        .badge-orcid    { background: #a6ce39; color: #000; }
 
-        h3 {
+        /* ── SECTION HEADERS ── */
+        h2 {
             color: var(--heading);
+            font-size: 1.15rem;
             border-bottom: 1px solid var(--border);
             padding-bottom: 10px;
-            margin-top: 45px;
+            margin: 48px 0 18px;
+            letter-spacing: 0.3px;
         }
+
+        /* ── PROJECT TABLE ── */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -82,87 +92,231 @@
             border-radius: 8px;
             overflow: hidden;
             border: 1px solid var(--border);
+            font-size: 0.94rem;
         }
         th {
-            background: #21262d;
-            padding: 14px 16px;
+            background: var(--surface2);
+            padding: 12px 16px;
             text-align: left;
+            color: var(--muted);
+            font-weight: 600;
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
         }
-        td {
-            padding: 14px 16px;
-            border-top: 1px solid var(--border);
-        }
+        td { padding: 13px 16px; border-top: 1px solid var(--border); vertical-align: top; }
+        tr:hover td { background: rgba(88,166,255,0.04); }
         a.repo-link {
             color: var(--accent);
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
         }
         a.repo-link:hover { text-decoration: underline; }
+        .tag {
+            display: inline-block;
+            background: rgba(88,166,255,0.12);
+            color: var(--accent);
+            border-radius: 4px;
+            padding: 2px 8px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .tag-green {
+            background: rgba(63,185,80,0.12);
+            color: var(--green);
+        }
+        .tag-purple {
+            background: rgba(188,140,255,0.12);
+            color: #bc8cff;
+        }
+        .tag-orange {
+            background: rgba(255,166,87,0.12);
+            color: #ffa657;
+        }
+
+        /* ── PUBLICATIONS ── */
+        .pub-list { list-style: none; }
+        .pub-list li {
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.95rem;
+        }
+        .pub-list li:last-child { border-bottom: none; }
+        .pub-title { color: var(--heading); font-weight: 600; margin-bottom: 4px; }
+        .pub-meta { color: var(--muted); font-size: 0.85rem; }
+        .pub-meta a { color: var(--accent); text-decoration: none; }
+        .pub-meta a:hover { text-decoration: underline; }
+
+        /* ── FOOTER ── */
+        footer {
+            margin-top: 72px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.82rem;
+            text-align: center;
+        }
+        footer a { color: var(--muted); text-decoration: none; }
+        footer a:hover { color: var(--accent); }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Terry Schermerhorn</h1>
-            <div class="tagline">AI Systems Architect • Sovereign & Federated AI</div>
-            
-            <div class="summary">
-                Independent researcher and systems architect building <strong>sovereign, federated, and verifiable AI infrastructure</strong>. 
-                Creator of the <strong>FI-13 Protocol Stack</strong> — an open framework for secure, weight-isolated collaboration between heterogeneous AI systems. 
-                Focused on multi-agent reasoning, governance, and local-first execution.
-            </div>
+<div class="container">
 
-            <div class="links">
-                <a href="https://orcid.org/0009-0004-1981-0916" class="badge badge-orcid" target="_blank">🔬 ORCID</a>
-                <a href="https://terry2023.github.io/Kosmos/Terry_Schermerhorn_Resume.pdf" class="badge badge-resume" target="_blank">📄 Resume (PDF)</a>
-                <a href="https://linkedin.com/in/terryschermerhorn" class="badge badge-linkedin" target="_blank">🔗 LinkedIn</a>
-                <a href="https://github.com/Terry2023" class="badge badge-github" target="_blank">🐙 GitHub</a>
-                <a href="https://zenodo.org/records/20262505" class="badge badge-zenodo" target="_blank">🔬 Zenodo</a>
-            </div>
-        </header>
+    <header>
+        <h1>Terry Schermerhorn</h1>
+        <div class="tagline">AI Systems Architect &nbsp;·&nbsp; Sovereign &amp; Federated AI &nbsp;·&nbsp; Independent Researcher</div>
 
-        <main>
-            <h3>Core Active Projects</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Project</th>
-                        <th>Focus</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a class="repo-link" href="https://github.com/Terry2023/fi13-protocol" target="_blank">FI-13</a></td>
-                        <td>Federated AI Infrastructure</td>
-                        <td>13-protocol stack for sovereignty-preserving interoperability and distributed cognition.</td>
-                    </tr>
-                    <tr>
-                        <td><a class="repo-link" href="https://github.com/Terry2023/orpheus" target="_blank">Orpheus</a></td>
-                        <td>Narrative Physics Engine</td>
-                        <td>Deterministic story generation via biomimetic character state vectors and closed-form trajectory simulation.</td>
-                    </tr>
-                    <tr>
-                        <td><a class="repo-link" href="https://github.com/Terry2023/methuselah" target="_blank">Methuselah</a></td>
-                        <td>Sovereign Gatekeeper</td>
-                        <td>Local constraint engine for controlled, auditable AI behavior and prompt governance.</td>
-                    </tr>
-                    <tr>
-                        <td><a class="repo-link" href="https://github.com/Terry2023/hive-engine" target="_blank">HiveMind / Areopagus</a></td>
-                        <td>Multi-Agent Debate</td>
-                        <td>Specialist Debate engine for structured reasoning and verification cycles.</td>
-                    </tr>
-                    <tr>
-                        <td><a class="repo-link" href="https://github.com/Terry2023/shackleton-protocol" target="_blank">Shackleton</a></td>
-                        <td>Multi-Agent Coordination</td>
-                        <td>Constitution-governed think tank with parallel specialist agents.</td>
-                    </tr>
-                </tbody>
-            </table>
+        <p class="summary">
+            Independent researcher and systems architect building
+            <strong>sovereign, federated, and verifiable AI infrastructure</strong>.
+            Creator of the <strong>FI-13 Protocol Stack</strong> — an open 13-protocol framework
+            for secure, weight-isolated collaboration between heterogeneous AI systems.
+            Focused on multi-agent reasoning, governance, narrative physics, and local-first execution.
+            U.S. Air Force veteran (Ret. E6) with nuclear-capable platform diagnostics experience
+            and Top Secret clearance.
+        </p>
 
-            <h3>Research & Publications</h3>
-            <ul>
-                <li><strong>Federated AI Infrastructure (FI-13)</strong> — Layered protocols for sovereign machine intelligence (Zenodo, 2026)</li>
-                <li><strong>Theta-Psi Framework</strong> — Geometric resolution of the Hubble Tension and dark matter alternative — <a href="https://zenodo.org/search?q=Schermerhorn" style="color:#58a6ff" target="_blank">six papers on Zenodo</a></li>
-            </ul>
-        </main>
+        <div class="badges">
+            <a href="Terry_Schermerhorn_Resume.pdf" class="badge badge-resume" target="_blank">📄 Resume</a>
+            <a href="https://linkedin.com/in/terryschermerhorn" class="badge badge-linkedin" target="_blank">🔗 LinkedIn</a>
+            <a href="https://github.com/Terry2023" class="badge badge-github" target="_blank">🐙 GitHub</a>
+            <a href="https://zenodo.org/records/20262505" class="badge badge-zenodo" target="_blank">📦 Zenodo</a>
+            <a href="https://orcid.org/0009-0004-1981-0916" class="badge badge-orcid" target="_blank">🔬 ORCID</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ACTIVE PROJECTS -->
+        <h2>Active Projects</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:18%">Project</th>
+                    <th style="width:18%">Domain</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a class="repo-link" href="https://github.com/Terry2023/Federated-AI" target="_blank">FI-13</a></td>
+                    <td><span class="tag">Federated AI</span></td>
+                    <td>13-protocol sovereignty-preserving interoperability stack for heterogeneous AI systems. Includes FMF, Specialist Debate (P10), and trust-weighted consensus (P11).</td>
+                </tr>
+                <tr>
+                    <td><a class="repo-link" href="https://github.com/Terry2023/Methuselah" target="_blank">Methuselah</a></td>
+                    <td><span class="tag">Sovereign AI</span></td>
+                    <td>Locally-sovereign AI dashboard with autonomous Gatekeeper LLM performing prompt scrubbing, intent classification, model routing, and dynamic weight adjustment. Zero cloud dependency.</td>
+                </tr>
+                <tr>
+                    <td><a class="repo-link" href="https://github.com/Terry2023/Multi-LLM-debating-Team" target="_blank">Areopagus</a></td>
+                    <td><span class="tag">Multi-Agent</span></td>
+                    <td>FI-13 Specialist Debate engine — heterogeneous LLMs running structured ASSERT → COUNTER → VALIDATE cycles with provenance-tracked verdicts and P13 circuit breaker.</td>
+                </tr>
+                <tr>
+                    <td><a class="repo-link" href="https://github.com/Terry2023/Shackleton-Project" target="_blank">Shackleton</a></td>
+                    <td><span class="tag">Multi-Agent</span></td>
+                    <td>Constitution-governed multi-agent think tank with five parallel domain specialists producing ranked, feasibility-scored solution architectures. Demonstrated on lunar colony requirements analysis.</td>
+                </tr>
+                <tr>
+                    <td><a class="repo-link" href="https://github.com/Terry2023/Socrates" target="_blank">Socrates</a></td>
+                    <td><span class="tag-green tag">Paper Review</span></td>
+                    <td>Autonomous multi-pass paper review system with Skeptic / Advocate / Convergence roles, persistent memory taxonomy including negative-space discovery tracking.</td>
+                </tr>
+                <tr>
+                    <td><a class="repo-link" href="https://github.com/Terry2023/Aristotle" target="_blank">Aristotle</a></td>
+                    <td><span class="tag-orange tag">Cislunar</span></td>
+                    <td>Physics-constrained cislunar resource network optimizer implementing the 74/26 entropy-minimization principle for near-Earth asteroid extraction economics.</td>
+                </tr>
+                <tr>
+                    <td><a class="repo-link" href="https://github.com/Terry2023/Plato" target="_blank">Plato</a></td>
+                    <td><span class="tag-green tag">Infrastructure</span></td>
+                    <td>Asynchronous microservice orchestration gate and decentralized semantic runtime layers for federated multi-model local AI environments.</td>
+                </tr>
+                <tr>
+                    <td><span style="color:var(--muted);font-style:italic">Orpheus</span></td>
+                    <td><span class="tag-purple tag">Narrative AI</span></td>
+                    <td>Sovereign Narrative Engine — deterministic story generation via biomimetic endocrine state vectors, the Moving Sidewalk temporal kinetic database, and Bradbury Stream closed-form character trajectory simulation. In development.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- PUBLICATIONS -->
+        <h2>Publications</h2>
+        <ul class="pub-list">
+            <li>
+                <div class="pub-title">Federated AI Infrastructure: Layered Interoperability Protocols for Sovereign Machine Intelligence</div>
+                <div class="pub-meta">
+                    Schermerhorn, T. L. (2026) &nbsp;·&nbsp;
+                    <a href="https://zenodo.org/records/20262505" target="_blank">Zenodo DOI: 10.5281/zenodo.20262505</a>
+                </div>
+            </li>
+            <li>
+                <div class="pub-title">The 74/26 Principle: Entropy Minimisation and Physics-Constrained Stability in Cislunar Resource Networks</div>
+                <div class="pub-meta">
+                    Schermerhorn, T. L. (2026) &nbsp;·&nbsp;
+                    <a href="https://zenodo.org/records/15207657" target="_blank">Zenodo DOI: 10.5281/zenodo.15207657</a>
+                </div>
+            </li>
+            <li>
+                <div class="pub-title">Cryogenic Infrastructure for Lunar-Scale Quantum Computing</div>
+                <div class="pub-meta">
+                    Schermerhorn, T. L. (2026) &nbsp;·&nbsp;
+                    <a href="https://zenodo.org/search?q=Schermerhorn" target="_blank">Zenodo</a>
+                </div>
+            </li>
+            <li>
+                <div class="pub-title">The Θ-Ψ Framework: Papers I–III — Geometric Cosmology and the Kepler Catastrophe</div>
+                <div class="pub-meta">
+                    Schermerhorn, T. L. (2025–2026) &nbsp;·&nbsp;
+                    <a href="https://zenodo.org/search?q=Schermerhorn" target="_blank">Full record on Zenodo</a>
+                    &nbsp;·&nbsp; Geometric resolution of the Hubble Tension and dark matter alternative
+                </div>
+            </li>
+        </ul>
+
+        <!-- RESEARCH AREAS -->
+        <h2>Research Areas</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td style="width:30%"><strong>Federated AI Infrastructure</strong></td>
+                    <td>Sovereignty-preserving interoperability, multi-agent orchestration, distributed consensus, Byzantine fault tolerance</td>
+                </tr>
+                <tr>
+                    <td><strong>Narrative Physics</strong></td>
+                    <td>Biomimetic endocrine state vectors, temporal kinetic semantic databases, closed-form character trajectory simulation</td>
+                </tr>
+                <tr>
+                    <td><strong>Cislunar Systems Architecture</strong></td>
+                    <td>Orbital manufacturing economics, asteroid mining logistics, entropy-constrained resource network optimization</td>
+                </tr>
+                <tr>
+                    <td><strong>Geometric Cosmology</strong></td>
+                    <td>Θ-Ψ framework, dark matter alternative via Kepler packing geometry, Hubble Tension resolution</td>
+                </tr>
+                <tr>
+                    <td><strong>Local-Sovereign AI</strong></td>
+                    <td>Edge-first inference, no-cloud architecture, Ollama/vLLM stack, GPU-accelerated local reasoning</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer>
+        <p>
+            Terry Schermerhorn &nbsp;·&nbsp; Brooksville, FL &nbsp;·&nbsp;
+            <a href="mailto:Terry.Schermerhorn@gmail.com">Terry.Schermerhorn@gmail.com</a>
+            &nbsp;·&nbsp;
+            ORCID: <a href="https://orcid.org/0009-0004-1981-0916" target="_blank">0009-0004-1981-0916</a>
+            &nbsp;·&nbsp;
+            <a href="https://github.com/Terry2023" target="_blank">github.com/Terry2023</a>
+        </p>
+    </footer>
+
+</div>
+</body>
+</html>
