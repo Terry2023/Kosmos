@@ -26,7 +26,6 @@
         }
         .container { max-width: 900px; margin: 0 auto; }
         
-        /* HEADER */
         header {
             border-bottom: 1px solid var(--border);
             padding-bottom: 32px;
@@ -57,7 +56,6 @@
             margin-bottom: 28px;
         }
 
-        /* BADGES */
         .badges {
             display: flex;
             gap: 10px;
@@ -79,7 +77,6 @@
         .badge-zenodo { background: #00749b; }
         .badge-orcid { background: #a6ce39; color: #000; }
 
-        /* SECTIONS */
         h2 {
             color: var(--heading);
             font-size: 1.15rem;
@@ -89,7 +86,6 @@
             letter-spacing: 0.3px;
         }
 
-        /* PROJECT TABLE */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -125,8 +121,10 @@
             font-weight: 600;
             white-space: nowrap;
         }
+        .tag-purple { background: rgba(188,140,255,0.12); color: #bc8cff; }
+        .tag-green { background: rgba(63,185,80,0.12); color: var(--green); }
+        .tag-orange { background: rgba(255,166,87,0.12); color: #ffa657; }
 
-        /* PUBLICATIONS */
         .pub-list {
             list-style: none;
             background: var(--surface);
@@ -141,10 +139,8 @@
         .pub-list li:last-child { border-bottom: none; }
         .pub-title { color: var(--heading); font-weight: 600; margin-bottom: 4px; }
         .pub-meta { color: var(--muted); font-size: 0.85rem; }
-        .pub-meta a { color: var(--accent); text-decoration: none; }
-        .pub-meta a:hover { text-decoration: underline; }
+        .pub-meta a { color: var(--accent); }
 
-        /* FOOTER */
         footer {
             margin-top: 72px;
             padding-top: 24px;
@@ -153,8 +149,6 @@
             font-size: 0.82rem;
             text-align: center;
         }
-        footer a { color: var(--muted); text-decoration: none; }
-        footer a:hover { color: var(--accent); }
     </style>
 </head>
 <body>
@@ -193,13 +187,46 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Your current project rows are good. Keeping them as-is unless you want further tightening -->
                 <tr>
                     <td><a class="repo-link" href="https://github.com/Terry2023/Federated-AI" target="_blank">FI-13</a></td>
-                    <td><span class="tag" style="background:rgba(88,166,255,0.12); color:var(--accent)">Federated AI</span></td>
-                    <td>13-protocol sovereignty-preserving interoperability stack for heterogeneous AI systems. Includes FMF, Specialist Debate, and trust-weighted consensus.</td>
+                    <td><span class="tag">Federated AI</span></td>
+                    <td>13-protocol sovereignty-preserving interoperability stack for heterogeneous AI systems. Includes Federated Memory Fabric, Specialist Debate, and trust-weighted consensus.</td>
                 </tr>
-                <!-- Add the rest of your project rows here (they looked good) -->
+                <tr>
+                    <td><a class="repo-link" href="https://github.com/Terry2023/Orpheus" target="_blank">Orpheus</a></td>
+                    <td><span class="tag-purple tag">Narrative AI</span></td>
+                    <td>Sovereign Narrative Engine using biomimetic state physics, temporal kinetic memory, and closed-form character trajectory modeling (Bradbury Stream).</td>
+                </tr>
+                <tr>
+                    <td><a class="repo-link" href="https://github.com/Terry2023/Methuselah" target="_blank">Methuselah</a></td>
+                    <td><span class="tag">Sovereign AI</span></td>
+                    <td>Local-first Gatekeeper system with autonomous prompt scrubbing, intent classification, model routing, and dynamic sovereignty enforcement.</td>
+                </tr>
+                <tr>
+                    <td><a class="repo-link" href="https://github.com/Terry2023/Multi-LLM-debating-Team" target="_blank">Areopagus</a></td>
+                    <td><span class="tag">Multi-Agent</span></td>
+                    <td>FI-13 powered Specialist Debate engine. Heterogeneous LLMs running structured ASSERT → COUNTER → VALIDATE cycles with provenance tracking.</td>
+                </tr>
+                <tr>
+                    <td><a class="repo-link" href="https://github.com/Terry2023/Shackleton-Project" target="_blank">Shackleton</a></td>
+                    <td><span class="tag">Multi-Agent</span></td>
+                    <td>Constitution-governed multi-agent think tank with domain specialists producing ranked, feasibility-scored solution architectures.</td>
+                </tr>
+                <tr>
+                    <td><a class="repo-link" href="https://github.com/Terry2023/Socrates" target="_blank">Socrates</a></td>
+                    <td><span class="tag-green tag">Paper Review</span></td>
+                    <td>Autonomous multi-pass scientific paper review system with Skeptic, Advocate, and Convergence roles.</td>
+                </tr>
+                <tr>
+                    <td><a class="repo-link" href="https://github.com/Terry2023/Aristotle" target="_blank">Aristotle</a></td>
+                    <td><span class="tag-orange tag">Cislunar</span></td>
+                    <td>Physics-constrained cislunar resource network optimizer using the 74/26 entropy-minimization principle.</td>
+                </tr>
+                <tr>
+                    <td><a class="repo-link" href="https://github.com/Terry2023/Plato" target="_blank">Plato</a></td>
+                    <td><span class="tag-green tag">Infrastructure</span></td>
+                    <td>Asynchronous microservice orchestration and semantic runtime layers for federated local AI environments.</td>
+                </tr>
             </tbody>
         </table>
 
@@ -221,21 +248,13 @@
                 <div class="pub-title">Cryogenic Infrastructure for Lunar-Scale Quantum Computing</div>
                 <div class="pub-meta">Schermerhorn, T. A. (2026) &nbsp;·&nbsp; <a href="https://zenodo.org/search?q=Schermerhorn" target="_blank">Zenodo</a></div>
             </li>
-            <li>
-                <div class="pub-title">The Θ-Ψ Framework: Papers I–III — Geometric Cosmology and the Kepler Catastrophe</div>
-                <div class="pub-meta">Schermerhorn, T. A. (2025–2026) &nbsp;·&nbsp; <a href="https://zenodo.org/search?q=Schermerhorn" target="_blank">Zenodo</a></div>
-            </li>
         </ul>
-
-        <!-- Research Areas table can stay or be adjusted later -->
     </main>
 
     <footer>
         <p>
             Terry Schermerhorn &nbsp;·&nbsp; Brooksville, FL &nbsp;·&nbsp;
             <a href="mailto:Terry.Schermerhorn@gmail.com">Terry.Schermerhorn@gmail.com</a>
-            &nbsp;·&nbsp; 
-            <a href="https://github.com/Terry2023" target="_blank">github.com/Terry2023</a>
         </p>
     </footer>
 </div>
