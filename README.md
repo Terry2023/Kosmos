@@ -1,7 +1,7 @@
 ### The Overarching Architectural Matrix for Sovereign & Federated AI Systems
 
 <p align="left">
-  <a href="https://terry2023.github.io/Kosmos/Terry_Schermerhorn_Resume.docx" target="_blank">
+  <a href="(https://terry2023.github.io/Kosmos/terry-schermerhorn-resume.docx)" target="_blank">
     <img src="https://img.shields.io/badge/Download-Master%20Resume%20%28DOCX%29-red?style=for-the-badge&logo=microsoftword&logoColor=white" alt="Download Resume"/>
   </a>
   <a href="https://linkedin.com/in/terryschermerhorn" target="_blank">
