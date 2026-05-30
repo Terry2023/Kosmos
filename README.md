@@ -1,9 +1,15 @@
 ### The Overarching Architectural Matrix for Sovereign & Federated AI Systems
 
 <p align="left">
-  <a href="[https://terry2023.github.io/Kosmos/Terry_Schermerhorn_Resume.docx] target="_blank"><img src="https://img.shields.io/badge/Download-Master%20Resume%20%28-red?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Download Resume"/></a>
-  <a href="https://linkedin.com/in/terryschermerhorn"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="https://zenodo.org/records/20262505"><img src="https://img.shields.io/badge/Zenodo-Open%20Science-00749b?style=for-the-badge&logo=zenodo&logoColor=white" alt="Zenodo"/></a>
+  <a href="https://terry2023.github.io/Kosmos/Terry_Schermerhorn_Resume.docx" target="_blank">
+    <img src="https://img.shields.io/badge/Download-Master%20Resume%20%28DOCX%29-red?style=for-the-badge&logo=microsoftword&logoColor=white" alt="Download Resume"/>
+  </a>
+  <a href="https://linkedin.com/in/terryschermerhorn" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://zenodo.org/records/20262505" target="_blank">
+    <img src="https://img.shields.io/badge/Zenodo-Open%20Science-00749b?style=for-the-badge&logo=zenodo&logoColor=white" alt="Zenodo"/>
+  </a>
 </p>
 
 ---
